@@ -6,40 +6,41 @@
 
 :root {
   --text-color: white;
-  --bg-url: url(./assets/bg-mobile.jpg);
+  --bg-url: url(./assets/assets/bg-mobile.jpg);
   --stroke-color: rgba(255, 255, 255, 0.5);
-  --surface-color:  rgba(255, 255, 255, 0.05);
-  --surface-color-hover:  rgba(0, 0, 0, 0.02);
-  --highlight-color:rgba(255, 255, 255, 0.2);
-  --switch-bg-url: url(./assets/moon-stars.svg);
+  --surface-color: rgba(255, 255, 255, 0.05);
+  --surface-color-hover: rgba(0, 0, 0, 0.02);
+  --highlight-color: rgba(255, 255, 255, 0.2);
+  --switch-bg-url: url(./assets/assets/moon-stars.svg);
   --border-image-color: white;
 }
 
 .light {
   --text-color: black;
-  --bg-url: url(./assets/bg-mobile-light.jpg);
+  --bg-url: url(./assets/assets/bg-mobile-light.jpg);
   --stroke-color: rgba(0, 0, 0, 0.5);
-  --surface-color:rgba(0, 0, 0, 0.05);
+  --surface-color: rgba(0, 0, 0, 0.05);
   --surface-color-hover: rgba(0, 0, 0, 0.02);
   --highlight-color: rgba(0, 0, 0, 0.1);
-  --switch-bg-url: url(./assets/sun.svg);
+  --switch-bg-url: url(./assets/assets/sun.svg);
   --border-image-color: black;
 }
 
 body {
   background-image: var(--bg-url);
-    background-repeat: 	no-repeat;
-    background-position: top center;
-    background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
 }
 
 body * {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   color: var(--text-color);
 }
 
 #container {
-  width: 360px;
+  width: 100%;
+  max-width: 588px;
   margin: 56px auto 0px;
   padding: 0 24px;
 }
@@ -52,17 +53,17 @@ body * {
 }
 
 #profile img {
- width: 112px;
- border-radius: 50%;
- border: 3px solid var(--border-image-color);
+  width: 112px;
+  border-radius: 50%;
+  border: 3px solid var(--border-image-color);
 }
 
 /* Switch */
 
 #switch {
   position: relative;
-   width: 64px;
-   margin: 4px auto;
+  width: 64px;
+  margin: 4px auto;
 }
 
 #switch button {
@@ -104,7 +105,6 @@ body * {
 /* links*/
 
 #Lista {
-  
   list-style: none;
   display: flex;
   flex-direction: column;
@@ -121,7 +121,7 @@ ul li a {
   padding: 16px 24px;
 
   background: var(--surface-color);
-  border: 1px solid  var(--stroke-color);
+  border: 1px solid var(--stroke-color);
   border-radius: 8px;
 
   backdrop-filter: blur(4px);
@@ -131,14 +131,13 @@ ul li a {
   font-weight: 500;
 
   transition: background 0.2s;
-
 }
 
 /* pseudo-selector*/
 
 ul li a:hover {
   background: var(--surface-color-hover);
-  border: 1.5px solid  var(--text-color);
+  border: 1.5px solid var(--text-color);
 }
 
 /* icones de redes sociais */
@@ -150,7 +149,7 @@ ul li a:hover {
 
   padding: 12px 0;
 
-  font-size: 40px; 
+  font-size: 40px;
 }
 
 #redes-sociais a {
@@ -159,10 +158,10 @@ ul li a:hover {
   justify-content: center;
   padding: 16px;
 
-  transition: background .2s;
+  transition: background 0.2s;
   border-radius: 100%;
 }
 
 #redes-sociais a:hover {
-  background:var(--highlight-color);
+  background: var(--highlight-color);
 }
